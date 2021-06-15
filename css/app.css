@@ -1,4 +1,13 @@
-h1 {
-    color: firebrick;
-    font-size: 30px;
-}
+
+    p{
+      font-size:20px;
+    }
+    body{
+        background: antiquewhite;
+    }
+    :root {
+        --text-coler: green;
+    }
+    h1{
+        color: var(--text-coler);
+    }
