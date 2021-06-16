@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    color: #9ac5c9;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: darkgrey;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+.header{
+    background-color: white;
+    border-bottom: 1px solid greenyellow;
+    padding: 20px 0;
+}
+.logo{
+    float: left;
+    width: 35%;
+}
+.toplinks{
+    float: right;
+    width: 50%;
+}
+.logo a{
+    font-size: 28px;
+    color: red;
+    text-decoration: none;
+    font-weight: 700;
+}
+.logo p{
+    font-size: 15px;
+    color: #477b25;
+}
+.toplinks ul{
+    float:right;
+}
+.toplinks li{
+    float: left;
+    list-style:none;
+    margin-left: 20px;
+}
+.toplinks li a {
+    color: blue;
+    font-weight: 500px;
+    text-decoration: none;
+    line-height: 52px;
+}
+.nav{
+    background-color: black;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+.menu{
+    float: left;
+}
+.menu li{
+    float: left;
+    list-style: none;
+    margin-right: 25px;
+}
+.menu li a{
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+.menu-right{
+    float: right;
+}
+.menu-right a{
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+h1{
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 90px;
+}
+.entry{
+    color: black;
+    text-align: left;
+}
+.content{
+    float: left;
+    width: calc(66.67% -  15px);
+    background-color: #ffffff;
+    margin-right: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+.hi{
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.author{
+    color: black;
+    margin: 20px 0;
+    text-align: left;
+    margin-left: 90px;
+}
+.sidebar {
+    float: right;
+    width: calc(33.33% - 15px);
+    margin-left: 15px;
+    background-color: #454242;
+    margin-top: 20px;
+}
+.sidebar .box {
+    float: left;
+    width: calc(100% - 60px);
+    padding: 30px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+.ha{
+    color: white;
+    margin:10px;
+}
+.box.search{
+    width: calc(100% - 100px);
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin:20px 20px;
+}
+.box.first{
+    width: calc(100% - 100px);
+    margin:20px 20px;
+}
+.box.social{
+    width: calc(100% - 100px);
+    margin:20px 20px;
+}
+.ho{
+    width:384px ;
+    height:200px ;
+    background-color:white;
+    float: right;
+    margin-top:30px;
+}
+.boxs{
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 135px;
+}
+.txt{
+    float: left;
+    margin: 15px;
+    position: relative;
+    left: 16px;
+}
+

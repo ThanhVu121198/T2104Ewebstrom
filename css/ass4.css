@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: white;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+.header{
+    background-color: white;
+    border-bottom: 1px solid black ;
+    padding: 20px 0;
+}
+.logo {
+    float: left;
+    width: 35%;
+}
+.toplinks{
+    float: right;
+    width: 40%;
+}
+.logo a{
+    font-size: 28px;
+    color: red;
+    text-decoration: none;
+    font-weight: 400;
+}
+.toplinks ul{
+    float: right;
+}
+.toplinks li{
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+}

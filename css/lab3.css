@@ -1,0 +1,26 @@
+#top{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: whitesmoke;
+}
+.bottom{
+    float: left;
+    text-align: center;
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    margin: 30px;
+    line-height: 15px;
+}
+p{
+    font-size: 14px;
+}
+.avatar{
+    width: 200px;
+    height: 220px;
+
+.bottom2{
+    color: white;
+    background-color: black;
+}
