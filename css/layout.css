@@ -164,4 +164,9 @@ h1{
     position: relative;
     left: 16px;
 }
+.map{
+    margin-left: 830px;
+    position: relative;
+    top: 30px;
+}
 

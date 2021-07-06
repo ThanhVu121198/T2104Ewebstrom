@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 3</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+        .grid{
+            float:none;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .row{
+            float:left;
+            width: 100%;
+        }
+        .row .item{
+            float: left;
+            width: calc(25% - 20px);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1 id="title">Danh sách sản phẩm</h1>
+<div class="grid">
+    <div class="row" id="row">
+
+    </div>
+</div>
+<button type="button" onclick="loadMore()">Load more</button>
+<script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="JS/demoJquyry.js"></script>
+</body>
+</html>

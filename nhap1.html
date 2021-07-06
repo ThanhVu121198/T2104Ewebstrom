@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="title">THANH ĐẸP TRAI</h1>
+<button type="button" onclick="hidePg()">Hide</button>
+<button type="button" onclick="showPg()">Show</button>
+<button type="button" onclick="onOff()">ON-OFF</button>
+<p class="pg">Thanh đẹp trai vô địch thiên hạ ngọc thu lâm phong anh tuấn tiêu sái</p>
+<p class="pg">Thanh đẹp trai vô địch thiên hạ ngọc thu lâm phong anh tuấn tiêu sái</p>
+<p class="pg">Thanh đẹp trai vô địch thiên hạ ngọc thu lâm phong anh tuấn tiêu sái</p>
+
+<script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+  var t = $("#title");
+  t.css({
+    "color":"red",
+    "font-size":"40px"
+  })
+  var ps = $(".pg");
+  ps.css({
+    "color":"green",
+    "font-size":"30px"
+  })
+  t.text("HELLO EVERYBODY");
+  t.html("<i>HELLO EVERYONE</i>")
+  function hidePg() {
+    // ps.fadeOut(2000);
+    ps.slideUp();
+  }
+  function showPg() {
+    // ps.show();
+    // ps.fadeIn(2000);
+    ps.slideDown();
+  }
+  function onOff() {
+    // ps.toggle();
+    // ps.fadeToggle();
+    ps.slideToggle();
+  }
+</script>
+</body>
+</html>
