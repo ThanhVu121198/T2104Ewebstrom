@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment JS 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+<section class="col-md-12">
+    <div class="container">
+        <h1 id="name1"></h1>
+        <img class="img-thumbnail" src="#" id="image1"/>
+        <h2 id="price1"></h2>
+    </div>
+</section>
+<script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url:"https://foodgroup.herokuapp.com/api/food/1",
+        method:"GET",
+        success:function (rs){
+            $("#name1").text(rs.data.name);
+            $("#image1").attr("src",rs.data.image);
+            $("#price1").text(rs.data.price);
+        }
+    });
+</script>
+</body>
+</html>
