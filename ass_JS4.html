@@ -3,13 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .thoitiet{
+            width: 200px;
+            height: 100px;
+        }
+        .nhietdo{
+            margin-left: 100px;
+            margin-top: -70px;
+        }
+        .dubao{
+            margin-left: 250px;
+            margin-top: -84px;
+        }
+        .vitri{
+            margin-top: -100px ;
+            margin-left: 1300px
+        }
+    </style>
 </head>
 <body>
-<h1>Nhiệt Độ: <span id="temp"></span><sup>o</sup>C</h1>
-<h2>Độ Ẩm: <span id="hum"></span>%</h2>
-<h2>Gió: <span id="win"></span>km/h</h2>
-<h2><span id="city"></span></h2>
-<p><span id="desc"></span></p>
+<!--<h1>Nhiệt Độ: <span id="temp"></span><sup>o</sup>C</h1>-->
+<!--<h2>Độ Ẩm: <span id="hum"></span>%</h2>-->
+<!--<h2>Gió: <span id="win"></span>km/h</h2>-->
+<!--<h2><span id="city"></span></h2>-->
+<!--<p><span id="desc"></span></p>-->
+<div class="thoitiet">
+    <div class="anh">
+        <img src="images/partly_cloudy.png" height="64" width="64"/>
+    </div>
+    <div class="nhietdo">
+        <h1><span id="temp"></span><sup>o</sup>C</h1>
+    </div>
+</div>
+<div class="dubao">
+    <p>Khả Năng Có Mưa: <span id="prec">10</span>%</p>
+    <p>Độ Ẩm: <span id="hum"></span>%</p>
+    <p>Gió: <span id="win"></span>km/h</p>
+</div>
+<div class="vitri">
+    <h1><span id="city">hanoi</span></h1>
+    <p><span id="desc"></span></p>
+</div>
 
 <script type="text/javascript" src="js1/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
