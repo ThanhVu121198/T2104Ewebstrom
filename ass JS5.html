@@ -21,115 +21,44 @@
       margin-top: -100px ;
       margin-left: 1300px
     }
+    .footer{
+      margin-top: 400px;
+    }
+    .weather{
+      float: left;
+      margin: 25px;
+    }
   </style>
 </head>
 <body>
-<div class="bang">
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">TH 2</a></li>
-    <li role="presentation"  class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">TH 3</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">TH 4</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">TH 5</a></li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-
-    <div role="tabpanel" class="tab-pane" id="home">
-      <div class="thoitiet">
-        <div class="anh">
-          <img src="images/partly_cloudy.png" height="64" width="64"/>
-        </div>
-        <div class="nhietdo">
-          <h1><span id="temp"></span><sup>o</sup>C</h1>
-        </div>
-      </div>
-      <div class="dubao">
-        <p>Khả Năng Có Mưa: <span id="prec">10</span>%</p>
-        <p>Độ Ẩm: <span id="hum"></span>%</p>
-        <p>Gió: <span id="win"></span>km/h</p>
-      </div>
-      <div class="vitri">
-        <h1><span id="city">hanoi</span></h1>
-        <p><span id="desc"></span></p>
-      </div>
+<div class="header">
+  <div class="thoitiet">
+    <div class="anh">
+      <img src="images/partly_cloudy.png" height="64" width="64"/>
     </div>
-
-
-
-    <div role="tabpanel" class="tab-pane active" id="profile">
-      <div class="thoitiet">
-        <div class="anh">
-          <img src="images/partly_cloudy.png" height="64" width="64"/>
-        </div>
-        <div class="nhietdo">
-          <h1><span id="temp1"></span><sup>o</sup>C</h1>
-        </div>
-      </div>
-      <div class="dubao">
-        <p>Khả Năng Có Mưa: <span id="prec1">10</span>%</p>
-        <p>Độ Ẩm: <span id="hum1"></span>%</p>
-        <p>Gió: <span id="win1"></span>km/h</p>
-      </div>
-      <div class="vitri">
-        <h1><span id="city1">hanoi</span></h1>
-        <p><span id="desc1"></span></p>
-      </div>
+    <div class="nhietdo">
+      <h1><span id="temp"></span><sup>o</sup>C</h1>
     </div>
-
-
-
-    <div role="tabpanel" class="tab-pane" id="messages">
-      <div class="thoitiet">
-      <div class="anh">
-        <img src="images/partly_cloudy.png" height="64" width="64"/>
-      </div>
-      <div class="nhietdo">
-        <h1><span id="temp2"></span><sup>o</sup>C</h1>
-      </div>
-    </div>
-      <div class="dubao">
-        <p>Khả Năng Có Mưa: <span id="prec2">10</span>%</p>
-        <p>Độ Ẩm: <span id="hum2"></span>%</p>
-        <p>Gió: <span id="win2"></span>km/h</p>
-      </div>
-      <div class="vitri">
-        <h1><span id="city2">hanoi</span></h1>
-        <p><span id="desc2"></span></p>
-      </div>
-    </div>
-
-
-    <div role="tabpanel" class="tab-pane" id="settings">
-
-
-      <div class="thoitiet">
-        <div class="anh">
-          <img src="images/partly_cloudy.png" height="64" width="64"/>
-        </div>
-        <div class="nhietdo">
-          <h1><span id="temp3"></span><sup>o</sup>C</h1>
-        </div>
-      </div>
-      <div class="dubao">
-        <p>Khả Năng Có Mưa: <span id="prec3">10</span>%</p>
-        <p>Độ Ẩm: <span id="hum3"></span>%</p>
-        <p>Gió: <span id="win3"></span>km/h</p>
-      </div>
-      <div class="vitri">
-        <h1><span id="city3">hanoi</span></h1>
-        <p><span id="desc3"></span></p>
-      </div>
-
-
-    </div>
-
-
-
+  </div>
+  <div class="dubao">
+    <p>Khả Năng Có Mưa: <span id="prec">10</span>%</p>
+    <p>Độ Ẩm: <span id="hum"></span>%</p>
+    <p>Gió: <span id="win"></span>km/h</p>
+  </div>
+  <div class="vitri">
+    <h1><span id="city">hanoi</span></h1>
+    <p><span id="desc"></span></p>
   </div>
 </div>
+<div class="footer">
+  <ul id="list-weather">
+
+  </ul>
+</div>
+
+
+
 <script type="text/javascript" src="js1/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script type="text/javascript">
   $.ajax({
     url:"http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
@@ -154,79 +83,33 @@
     }
   })
 
-
-
   $.ajax({
-    url:"http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
-    nethod:"GET",
-    success: function (rs){
-      for (var i=4;i<rs.list.length;i++){
-        $("#temp1").text(rs.list[i].main.temp);
-      }
-      for (var i=4;i<rs.list.length;i++){
-        $("#hum1").text(rs.list[i].main.humidity);
-      }
-      for (var i=4;i<rs.list.length;i++){
-        $("#win1").text(rs.list[i].wind.speed);
-      }
-
-      $("#city1").text(rs.city.name+","+rs.city.country);
-      for (var i=4;i<rs.list.length;i++){
-        for (var j=0;j<rs.list[i].weather.length;j++){
-          $("#desc1").text(rs.list[i].weather[j].description)
+    url: "http://api.openweathermap.org/data/2.5/forecast?",
+    data:{
+      q: "Hanoi,vietnam",
+      appid: "09a71427c59d38d6a34f89b47d75975c",
+      units: "metric"
+    },
+    nethod: "GET",
+    success: function (rs) {
+      var list = rs.list;
+      for(var i=0;i<list.length;i++){
+        var img_url = "http://openweathermap.org/img/wn/03d@2x.png"
+        for (var j=0;j<list[i].weather.length;j++){
+          img_url = "http://openweathermap.org/img/wn/"+list[i].weather[j].icon+"@2x.png"
         }
+        var thanh = " <li class=\"weather\">\n" +
+                "      <p class=\"timer\">"+list[i].dt_txt+"</p>\n" +
+                "      <img src=\""+img_url+"\">\n" +
+                "      <p class=\"min-temp\"><span>"+list[i].main.temp_min+"</span><sup>o</sup>C</p>\n" +
+                "      <p class=\"max-temp\"><span>"+list[i].main.temp_max+"</span><sup>o</sup>C</p>\n" +
+                "    </li>";
+        $("#list-weather").append(thanh);
       }
     }
   })
 
 
-
-  $.ajax({
-    url:"http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
-    nethod:"GET",
-    success: function (rs){
-      for (var i=12;i<rs.list.length;i++){
-        $("#temp2").text(rs.list[i].main.temp);
-      }
-      for (var i=12;i<rs.list.length;i++){
-        $("#hum2").text(rs.list[i].main.humidity);
-      }
-      for (var i=12;i<rs.list.length;i++){
-        $("#win2").text(rs.list[i].wind.speed);
-      }
-
-      $("#city2").text(rs.city.name+","+rs.city.country);
-      for (var i=12;i<rs.list.length;i++){
-        for (var j=0;j<rs.list[i].weather.length;j++){
-          $("#desc2").text(rs.list[i].weather[j].description)
-        }
-      }
-    }
-  })
-
-
-  $.ajax({
-    url:"http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
-    nethod:"GET",
-    success: function (rs){
-      for (var i=20;i<rs.list.length;i++){
-        $("#temp3").text(rs.list[i].main.temp);
-      }
-      for (var i=20;i<rs.list.length;i++){
-        $("#hum3").text(rs.list[i].main.humidity);
-      }
-      for (var i=20;i<rs.list.length;i++){
-        $("#win3").text(rs.list[i].wind.speed);
-      }
-
-      $("#city3").text(rs.city.name+","+rs.city.country);
-      for (var i=20;i<rs.list.length;i++){
-        for (var j=0;j<rs.list[i].weather.length;j++){
-          $("#desc3").text(rs.list[i].weather[j].description)
-        }
-      }
-    }
-  })
 </script>
 </body>
 </html>
